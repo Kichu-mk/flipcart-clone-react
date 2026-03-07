@@ -22,7 +22,7 @@ const Navbar = () => {
         }, []);
 
     return (
-        <div className='w-full h-[12vh] flex'>
+        <div className='fixed bg-white z-50 w-full h-[10vh] flex '>
             <div className="w-[25%] h-full  flex items-center justify-center">
                 <div className='h-[70%] w-[70%] min-h-6 flex items-center'>
                     <img src={logo} alt="" className='' />
