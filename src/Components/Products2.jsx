@@ -7,75 +7,78 @@ import 'swiper/css/navigation';
 
 
 
-import p10 from "../assets/Products/10.jpg";
-import p11 from "../assets/Products/11.webp";
-import p12 from "../assets/Products/12.webp";
-import p13 from "../assets/Products/13.jpg";
-import p14 from "../assets/Products/14.webp";
-import p15 from "../assets/Products/15.jpg";
-import p16 from "../assets/Products/16.webp";
-import p17 from "../assets/Products/17.webp";
-import p18 from "../assets/Products/18.webp";
+import p1 from "../assets/Products/1.webp";
+import p2 from "../assets/Products/2.webp";
+import p3 from "../assets/Products/3.webp";
+import p4 from "../assets/Products/4.webp";
+import p5 from "../assets/Products/5.webp";
+import p6 from "../assets/Products/6.webp";
+import p7 from "../assets/Products/7.webp";
+import p8 from "../assets/Products/8.webp";
+import p9 from "../assets/Products/9.webp";
 
-const Products = ({ title }) => {
-  let offerArr = [
+const Products2 = ({ title }) => {
+ 
+  let products = [
     {
-      id: 1,
-      name: "Medium Tote Bag",
-      price: "399",
-      img: p10,
+        id:1,
+        name : "Samsung Galaxy A16",
+        price : "35,000",
+        img : p1
     },
     {
-      id: 2,
-      name: "Godrej 7 Kg ",
-      price: "9,999",
-      img: p11,
+        id:2,
+        name : "POCO C16",
+        price : "10,000",
+        img : p2
     },
     {
-      id: 3,
-      name: "Godrej 1 Ton AC",
-      price: "28,990",
-      img: p12,
+        id:3,
+        name : "Apple Iphone 15",
+        price :"60,000" ,
+        img : p3
     },
     {
-      id: 4,
-      name: "DOCTOR EXTRA SOFT",
-      price: "398",
-      img: p13,
+        id:4,
+        name : "iQOO Neo9 Pro 5G",
+        price : "31,998",
+        img : p4
     },
     {
-      id: 5,
-      name: "Sonata Watch",
-      price: "749",
-      img: p14,
+        id:5,
+        name : "Tecno POP %G",
+        price : "11,999",
+        img : p5
     },
     {
-      id: 6,
-      name: "Fastrack Limitless Fs2 Pro",
-      price: "3,800",
-      img: p15,
+        id:6,
+        name : "realme NARZO N16",
+        price : "8,498",
+        img : p6
     },
     {
-      id: 7,
-      name: "Presto Naphthalene Balls",
-      price: "380",
-      img: p16,
+        id:7,
+        name : "Redmi A4 5G",
+        price : "8,999",
+        img : p7
     },
     {
-      id: 8,
-      name: "Solimo 12-Inch Clock",
-      price: "599",
-      img: p17,
+        id:8,
+        name : "Motorola G45 5G",
+        price : "11,697",
+        img : p8
     },
     {
-      id: 9,
-      name: "FUNTEREST Wall Decor",
-      price: "699",
-      img: p18,
+        id:9,
+        name : "iQOO Z9s 5G",
+        price : "21,999",
+        img : p9
     },
-  ];
+
+]
+
   return (
-    <div className="w-full h-full p-[10px] bg-[#f1f2f4]">
+    <div className="w-full h-full p-[10px] pt-0 bg-[#f1f2f4]">
       <h1 className="pl-5 pt-5 w-full bg-white text-2xl font-semibold">{title || "NO title"} </h1>
       <div className="w-full h-full bg-white flex items-center flex-wrap">
       <Swiper
@@ -87,7 +90,7 @@ const Products = ({ title }) => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-      {offerArr.map((obj) => {
+      {products.map((obj) => {
         return (
           <SwiperSlide>
             <div className="w-[250px] h-[250px] ml-6 flex flex-col items-center justify-end rounded p-2 hover:bg-gray-200 hover:rounded">
@@ -107,4 +110,4 @@ const Products = ({ title }) => {
   );
 };
 
-export default Products;
+export default Products2;

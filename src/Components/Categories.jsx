@@ -52,8 +52,8 @@ const Categories = () => {
     },
 ]
     return (
-        <div className='w-full h-[30vh] p-[10px] bg-[#f1f2f4]'>
-            <div className="w-full h-full bg-white flex items-center justify-center p-5">
+        <div className='w-full h-full p-[10px] bg-[#f1f2f4]'>
+            <div className="w-full h-full bg-white flex flex-wrap items-center justify-center p-5">
                 {
                     categoryArr.map((obj)=>{
                         return( <CatCat name={obj.name} img={obj.img} />)
