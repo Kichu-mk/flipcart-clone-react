@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.2.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "swiper": "^12.1.2",
     "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
